@@ -4,12 +4,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const commentList = document.querySelector(".comment-list"); 
 
   submitButton.addEventListener("click", function () {
+    console.log(commentInput.value)
     const commentText = commentInput.value.trim(); 
 
     if (commentText === "") {
       alert("댓글을 입력해주세요!");
       return;
     }
+
+    alert("댓글이 등록되었습니다");
 
     const newComment = document.createElement("li");
     newComment.innerHTML = `
