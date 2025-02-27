@@ -24,7 +24,7 @@
         <h2 class="title"></h2>
         <hr />
         <section>
-          <h3 class="subtitle">자기소개</h3>
+          <h3 class="subtitle" id="introduce">자기소개</h3>
           <p>
             안녕하세요. 해야하기 때문에 한다는 마인드로 살고 있는 꾹이입니다.
             <br />
@@ -36,7 +36,7 @@
           </p>
         </section>
 
-        <section>
+        <section id="gallery">
           <h3 class="subtitle">페스티벌 좋아해요~ 근데 EDM에 진심이에요...</h3>
           <div class="container">
             <div class="gallery-container">
@@ -51,9 +51,11 @@
               <img src="./images/festival-9.png" class="fesitival-image" />
             </div>
           </div>
+        </section>
 
+        <section id="favorite">
           <h3 class="subtitle">나를 울린 인생 작품</h3>
-          <article>
+          <article class="movie-container">
             <h4>인생 영화</h4>
             <div class="thumbnail">
               <img
@@ -63,14 +65,29 @@
               />
             </div>
             <p>
-              드니 빌뇌브의 SF 영화인 듄: 파트 2를 가장 인상 깊게 보았습니다. <br />
+              드니 빌뇌브의 SF 영화인 듄: 파트 2를 가장 인상 깊게 보았습니다.
+              <br />
               처음에는 단순한 SF 영화로 생각하였지만, 종교와 정치, 그리고 전쟁에
               대한 고뇌가 담겨있어 영화에 몰입할 수 있었습니다.<br />
               디지털 기기로 영화를 소비하는 시대에 영화의 경계가 점점
-              희미해졌다고 느끼는 중, 듄: 파트2 같은 작품을 통해 영화만이 가진 경렬한
-              경험과 예술성을 느끼게 되었습니다.
+              희미해졌다고 느끼는 중, 듄: 파트2 같은 작품을 통해 영화만이 가진
+              경렬한 경험과 예술성을 느끼게 되었습니다.
             </p>
           </article>
+          <article class="movie-container">
+            <div class="thumbnail">
+              <img
+                src="https://i.namu.wiki/i/GZPda-0b0Cb-4jxFo8Y0Rp-jkd0Ti02bgaRk_Gdim8Eyh9pxtfy0YsBC2a9p0o1IvREsPKQ-IVEk7R2HkQojYw.webp"
+                width="300"
+                alt="그래비티 영화 포스터"
+              />
+            </div>
+            <p>
+              미키 타카히로의 나는 내일, 어제의 너와 만난다라는 작품입니다. 처음
+              보면서 5번 정도나 울었던 가장 많이 울린 작품입니다.
+            </p>
+          </article>
+
           <hr />
           <article>
             <h4>인생 음악</h4>
@@ -83,16 +100,22 @@
                   alt="플레이리스트"
                 />
               </div>
-            </div>        
+            </div>
             <p>
-              EDM 듣는 것을 좋아하지만, 잔잔한 팝도 좋아합니다. Way Back Home이라는 곡으로 유명했던 숀의 시티팝 감성의 음악이에요. <br/>
-              처음 들은 2020년부터 바뀌지 않은 제 최애곡입니다. 힐링이 필요할 때마다 항상 찾는 곡입니다. <br/>
-              <a href="https://www.youtube.com/watch?v=oKgCka74xJ4&list=PLUIiI7LIPOqGGhI17YsgjLqECY6PWzbIS">플레이 리스트 바로가기</a>
-              <br/>이 외에도 제 플레이리스트를 보면 잔잔한 느낌의 곡을 찾아보실 수 있습니다~.
+              EDM 듣는 것을 좋아하지만, 잔잔한 팝도 좋아합니다. Way Back
+              Home이라는 곡으로 유명했던 숀의 시티팝 감성의 음악이에요. <br />
+              처음 들은 2020년부터 바뀌지 않은 제 최애곡입니다. 힐링이 필요할
+              때마다 항상 찾는 곡입니다. <br />
+              <a
+                href="https://www.youtube.com/watch?v=oKgCka74xJ4&list=PLUIiI7LIPOqGGhI17YsgjLqECY6PWzbIS"
+                >플레이 리스트 바로가기</a
+              >
+              <br />이 외에도 제 플레이리스트를 보면 잔잔한 느낌의 곡을 찾아보실
+              수 있습니다~.
             </p>
           </article>
         </section>
-        <section>
+        <section id="comment">
           <div class="comment-writing-container">
             <form>
               <fieldset class="comment-box">
@@ -104,7 +127,13 @@
                   placeholder="정말 멋진 글이네요. 크루가 감동할 수 있도록 훈훈해지는 댓글 부탁 드립니다."
                 >
                 </textarea>
-                <button type="button" class="comment-button" id = "submit-comment">등록</button>
+                <button
+                  type="button"
+                  class="comment-button"
+                  id="submit-comment"
+                >
+                  등록
+                </button>
               </fieldset>
             </form>
           </div>
@@ -183,16 +212,16 @@
           <h2>Contents</h2>
           <ol class="contents">
             <li>
-              <a href="#">자기소개</a>
+              <a href="#introduce">자기소개</a>
             </li>
             <li>
-              <a href="#">나만의 갤러리</a>
+              <a href="#gallery">나만의 갤러리</a>
             </li>
             <li>
-              <a href="#">나를 울린 인생 작품</a>
+              <a href="#favorite">나를 울린 인생 작품</a>
             </li>
             <li>
-              <a href="#">감상평</a>
+              <a href="#comment">감상평</a>
             </li>
           </ol>
         </nav>

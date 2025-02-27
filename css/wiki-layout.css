@@ -111,6 +111,17 @@ aside.right-sidebar nav {
   padding: var(--right-sidebar-padding);
 }
 
+.right-sidebar {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 ol.contents {
   list-style-type: decimal;
   padding: 24px;
@@ -256,4 +267,18 @@ footer p {
 
 .comment-content img {
   vertical-align: middle;
+}
+
+.movie-container {
+  margin-bottom: 30px;
+}
+
+.movie-container .thumbnail {
+  margin-bottom: 30px;
+}
+
+.movie-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
